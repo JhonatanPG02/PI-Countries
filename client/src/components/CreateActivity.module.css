@@ -1,0 +1,151 @@
+.body{
+    background-image: linear-gradient(rgba(0, 0, 255, 0.40), rgba(232, 126, 20, 0.4)), url('../images/turismo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    position:absolute;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+}   
+
+.nav {
+    background-color: #1f7e75;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.li {
+    float: left;
+    font-size: 10px;
+    padding: 14px 16px;
+}
+
+.button {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 70px;
+    color: #0099CC;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+.button:hover {
+        background-color: #0099CC;
+        color: white;
+   }
+
+.button3{
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(22, 51, 110);
+    border-radius: 70px;
+    font-size: 12px;
+    padding: 10px 50px 10px 50px;
+    margin-left: 145px;
+    border: none;
+}
+
+.button3:hover{
+    background-color: #0099CC;
+    color: white;
+}
+
+.h1{
+    text-align: center;
+    color: #154360;
+    border-top: 2px solid #154360;
+    border-bottom: 2px solid #154360;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.form{
+    margin-top: 1px;
+    margin-left: 15px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.form input{
+    padding: 6px;
+    border: none;
+    margin: 10px 10px 10px 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form select{
+    padding: 6px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    outline: #365b77;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.container{
+    background-color: rgb(246, 242, 242);
+    color: #154360;
+    border: 3px solid #1f7e75;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 500px;
+    box-shadow: 7px 7px 15px #191919,
+        7px 7px 15px #292929;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
+        transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.elements{
+    display: flex;
+    flex-direction:row
+}
+
+.element{
+    text-align: left;
+    padding: 2px;
+    margin: 4px;
+}
+
+.buttonX{
+    text-align: center;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    padding-bottom: 2px;
+    border: none;
+}
+
+.error{
+    font-size: 9px;
+    color: red;
+}
+
+

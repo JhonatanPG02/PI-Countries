@@ -1,0 +1,47 @@
+.paginated{
+    margin: auto;
+    text-decoration: none;
+    display: inline-block;
+    padding: 40px;
+    justify-content: center; 
+    position: relative;
+}
+
+.numbers{
+    text-decoration: none;
+    list-style: none;
+    background-color: #D6ECF6;
+    border-radius: 50px;
+    justify-content: center;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+} 
+
+
+.number{
+    color: black;
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    gap:10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.number:hover{
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transform: scale(1.40);
+    background-color: #0099CC;
+    color: white;
+    border: 1px solid white;
+}
+

@@ -1,0 +1,27 @@
+.button {
+    background-color: #0099CC;
+    border: 2px solid white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    padding: 4px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+.button:hover {
+        background-color: rgb(104, 235, 209);
+        color: #0099CC;
+   }
+
+.input {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}

@@ -1,0 +1,30 @@
+.img{
+    width: 140px;
+    height: 80px;
+}
+
+.name {
+    color: brown;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.paf{
+    color: rgb(10, 31, 75);
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.details{
+    background-color: white;
+    color: rgb(10, 31, 75);
+    border: 1px solid #1f7e75;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+    border-radius: 70px;
+}
+
+.details:hover{
+    background-color: #0099CC;
+    color: white;
+}

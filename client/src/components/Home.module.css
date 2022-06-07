@@ -1,0 +1,143 @@
+
+.nav {
+    background-color: #1f7e75;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.navp {
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    margin-left: 20px;
+}
+
+
+.button {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 70px;
+    color: #0099CC;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+.button:hover {
+        background-color: #0099CC;
+        color: white;
+   }
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    text-decoration: none;
+}
+
+.header {
+   color: white;
+   display: flex;
+   justify-content: space-between;
+}
+
+.order {
+    background-color: #1f7e75;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.select {
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.headp {
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.title {
+    margin: 10px;
+    color: white;
+    border-radius: 10px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.refresh {
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bolder;
+}
+
+.refresh:hover {
+    background-color: #0099CC;
+    color: white;
+    font-weight: bolder;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.40), rgba(232, 126, 20, 0.4)), url('../images/mundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.card {
+    background-image: url('../images/marco.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(10, 31, 75);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #1f7e75;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+
+
