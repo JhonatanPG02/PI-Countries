@@ -75,11 +75,3 @@ export function postActivity (payload) {
     }
 }
 
-export const GET_ALL_COUNTRIES = 'GET_ALL_COUNTRIES';
-export const GET_COUNTRY_BY_NAME = 'GET_COUNTRY_BY_NAME';
-export const GET_DETAILS = 'GET_DETAILS';
-export const ORDER_BY_NAME = 'ORDER_BY_NAME';
-export const ORDER_BY_POPULATION = 'ORDER_BY_POPULATION';
-export const FILTER_BY_CONTINENT = 'FILTER_BY_CONTINENT';
-export const FILTER_BY_ACTIVITY = 'FILTER_BY_ACTIVITY';
-export const GET_ALL_ACTIVITIES = 'GET_ALL_ACTIVITIES';

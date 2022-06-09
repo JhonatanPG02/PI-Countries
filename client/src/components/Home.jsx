@@ -6,7 +6,7 @@ import {getAllCountries,
         orderByName,
         orderByPopulation,
         filterByContinent,
-        filterByActivity
+        filterByActivity,
        } from '../actions';
 import {Link} from 'react-router-dom';
 import CountryCard from './CountryCard';
@@ -23,7 +23,7 @@ export default function Home() {
     //Aplicando el paginado.
     const [order, setOrder] = useState('')                                            //Para el ordenamiento
     const [currentPage, setCurrentPage] = useState(1);                                //Pagina 1   
-    const [countryForPage, setCountryForPage] = useState(10);                         //10 elem por Pag.
+    const [countryForPage, /*setCountryForPage*/] = useState(10);                         //10 elem por Pag.
     const indexLastCountry = currentPage === 1 ? 9 : currentPage * countryForPage -1;  //9 - 19 - 29  
     const indexFirsCountry = currentPage === 1 ? 0 : indexLastCountry - countryForPage; // 0- 9 - 19
     const currentCountries = allCountries.slice(indexFirsCountry, indexLastCountry);  //Division del array
@@ -47,7 +47,7 @@ export default function Home() {
         e.preventDefault();
         dispatch(getAllCountries());
     }
-
+   
     function handleOrderName(e) {
         e.preventDefault()
         dispatch(orderByName(e.target.value));
@@ -139,12 +139,12 @@ export default function Home() {
                         return (
                         <div className={styles.card}>
                         <CountryCard
+                        key={elem.id}
                         id={elem.id} 
                         name={elem.name} 
                         flag={elem.flag} 
                         continent={elem.continent}
                         population={elem.population}
-                        key={elem.id}
                         />
                         </div>)
                     })

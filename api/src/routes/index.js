@@ -1,12 +1,7 @@
-// Importar axios para consumir la API 
-const axios = require('axios')
-
 const { Router } = require('express');
-// Importar todos los routers;
-// Ejemplo: const authRouter = require('./auth.js');
-const { Country, Activity } = require('../db')
-
 const router = Router();
+const { Activity, Country } = require("../db");
+const axios = require("axios");
 
 //Solicitud a la API y almacenando en la BD.
 const getCountries = async () => {
@@ -54,9 +49,6 @@ const getAll = async () =>{
     });
 };
 
-
-// Configurar los routers
-// Ejemplo: router.use('/auth', authRouter);
 router.get('/countries', async (req, res) => {
     const {name} = req.query
     try {
@@ -65,13 +57,13 @@ router.get('/countries', async (req, res) => {
         if(!name) {
             res.status(200).send(countriesTotal);
         //Si me pasan el nombre, filtro del total y devuelvo.
-        } else {
+        } else{
             const countryName = countriesTotal.filter(el => el.name.toLowerCase().includes(name.toLowerCase()))
             countryName.length ?
             res.status(200).send(countryName) :
             res.status(404).send('Country not found')
-        }
-    } catch(err) {
+        } 
+     }catch(err) {
         res.status(404).send(err)
     }
 })
@@ -99,6 +91,8 @@ router.get('/countries/:id', async (req, res)=> {
     }
 
 })
+
+
 //Obtener todas las actividades, incluido los datos del País.
 router.get('/activity', async (req, res) => {
     try {
@@ -132,5 +126,6 @@ router.post('/activity', async (req,res) => {
         res.status(404).send(err)
     }
   })
+
 
 module.exports = router;

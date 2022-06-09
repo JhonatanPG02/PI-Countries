@@ -12,6 +12,8 @@ function validate(input) {
         errors.name= 'Name is required'
     } else if(input.name.length < 3){
         errors.name = 'The activity name is invalid'
+    } if(!input.name.match( (/^[A-Za-z]+$/))){
+        errors.name = 'Name of activity must contain only letters'
     }
     if(!input.difficulty){
         errors.difficulty = 'Difficulty is required'
@@ -59,9 +61,9 @@ export default function CreateActivity() {
     }
 
     function handleSubmit(e){
-        if (input.name.length < 3 || !input.name || !input.difficulty || !input.duration || !input.season || input.countries.length === 0 ){
+        if (input.name.length < 3 || !input.name.match( (/^[A-Za-z]+$/)) || !input.name || !input.difficulty || !input.duration || !input.season || input.countries.length === 0 ){
             e.preventDefault()
-           alert('All fields must be completed')
+           alert('Complete all options')
        } else {
         e.preventDefault()
         setErrors(validate(input))
